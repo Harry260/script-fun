@@ -1,0 +1,52 @@
+@media (max-width:730px){
+    .content-wrap{
+        height: auto;
+        width: 100%;
+        position: relative;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        border-radius: 0;
+    }
+
+    .list-messages{
+        height: 100vh;
+    }
+}
+
+@media (max-width:560px){
+    .content-wrap{
+        display: block;
+        overflow-y: scroll;
+        scroll-snap-type: y mandatory ;
+    }
+
+    .button-blue {
+        position: fixed !important;
+    }
+
+    .icon-wrap{
+        background: black;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+    }
+    .contetn-inner{
+        scroll-snap-align: start;
+        width: 100%;
+        margin-bottom: 20px;
+        height: 100vh !important;
+    }
+
+    .list-messages{
+        scroll-snap-align: start;
+    }
+
+    
+}
+
+@media (max-width:560px){
+    .favtit{
+        display: none;
+    }
+}

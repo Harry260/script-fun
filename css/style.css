@@ -1,0 +1,380 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    outline-width: 0;
+    word-wrap: break-word;
+}
+
+body{
+    background: black;
+}
+
+.unselectable {
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+ 
+    /*
+      Introduced in Internet Explorer 10.
+      See http://ie.microsoft.com/testdrive/HTML5/msUserSelect/
+    */
+    -ms-user-select: none;
+    user-select: none;
+ }
+
+.content-wrap{
+    background-color: #161617;
+    height: 500px;
+    width: 700px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    left: calc(50% - 350px);
+    top: calc(50vh - 250px);
+    position: absolute;
+    overflow: hidden;
+}
+
+.list-messages{
+    background-color: #1f1f1f;
+    min-width: 300px;
+    height: 500px;
+    overflow-y: scroll;
+    margin-right: -17px;
+}
+
+.title-small{
+    padding: 10px 20px;
+    border-bottom: 1px solid #1f1f1f;
+    display: flex;
+    justify-content: space-between;
+}
+
+.title-small h1{
+    color: white;
+    font-size: 18px;
+}
+
+.pop-message-item{
+    padding: 5px 20px;
+    cursor: pointer;
+    width: 100%;
+    display: flex;
+    max-width: 300px;
+}
+
+.item-content{
+    width: calc(100% - 40px);
+}
+
+.icon-item-wrap{
+    align-items: center;
+    display: flex;
+}
+
+.icon-item{
+    width: 20px;
+    height: 20px;
+    background-size: contain;
+    margin-right: 10px;
+}
+
+.pop-message-item:hover{
+    background-color: #252526;
+}
+
+.message-item-title{
+    color: white;
+    font-size: 13px;
+    word-wrap : break-word;
+    overflow-wrap: break-word;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* number of lines to show */
+    -webkit-box-orient: vertical;
+}
+
+.message-item-text{
+    color: #9c9ca2;
+    font-size: 11px;
+    display: block;
+    word-wrap : break-word;
+    overflow-wrap: break-word;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* number of lines to show */
+    -webkit-box-orient: vertical;
+}
+
+.title-large{
+    padding: 20px;
+}
+
+.title-large h1{
+    color: white;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 32px;
+}
+
+
+.contetn-inner{
+    width: 500px;
+}
+
+.input-box{
+    background-color: #1f1f1f;
+    padding: 8px 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.text-ar-wrap{
+    background: transparent;
+    padding: 8px 5px;
+}
+
+.input-box input, .input-box textarea{
+    background-color: transparent;
+    border: none;
+    color: white;
+    width: 100%;
+}
+.input-box textarea{
+    font-size: 12px;
+    color: #9c9ca2;
+    resize: none;
+    height: 200px;
+}
+
+.inputs-popup{
+    padding: 25px;
+    width: 100%;
+}
+
+.button-blue{
+    padding: 6px 8px;
+    background:#fa2d48;
+    border: none;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#create-pop-up{
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+
+.add-icon{
+    background-image: url(../assets/icons/add.png);
+    height: 20px;
+    width: 20px;
+    background-size: 100% 100%;
+}
+
+.icon-wrap{
+    padding: 5px;
+    border-radius: 20px;
+}
+
+.icon-wrap:hover{
+    background-color: #252526;
+}
+
+.pop-item{
+    position: absolute;
+    width: 100px;
+    background: #1d1e22;
+    display: none;
+    padding: 10px 0;
+    right: 10px;
+    border-radius: 5px;
+    box-shadow:0 4px 30px rgb(0 0 0 / 50%);
+}
+
+.pop-item h6{
+    color: white;
+    font-size: 12px;
+    padding: 5px 15px;
+}
+
+.pop-item h6:hover{
+    background-color: #0f0f0f;
+}
+
+.ic-active{
+    background-color: #0f0f0f;
+}
+
+.icons-pop{
+    display: flex;
+    padding: 10px;
+    padding-left: 0;
+}
+
+.icon-sel{
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.icon-cont{
+    height: 20px;
+    width: 20px;
+    background-size: 100% 100%;
+}
+
+.icon-sel:hover{
+    background-color: #1f1f1f;
+}
+
+.icon-sel:nth-child(1) .icon-cont{
+    background-image: url(../assets/icons/na.png);
+}
+
+.icon-sel:nth-child(2) .icon-cont{
+    background-image: url(../assets/icons/help.png);
+}
+
+.icon-sel:nth-child(3) .icon-cont{
+    background-image: url(../assets/icons/info.png);
+}
+
+
+.icon-sel:nth-child(4) .icon-cont{
+    background-image: url(../assets/icons/warning.png);
+}
+
+
+.icon-sel:nth-child(5) .icon-cont{
+    background-image: url(../assets/icons/cross.png);
+}
+
+.icon_0{
+    background-image: url(../assets/icons/chat.png);
+}
+
+.icon_32{
+    background-image: url(../assets/icons/help.png);
+}
+
+.icon_64{
+    background-image: url(../assets/icons/info.png);
+}
+
+
+.icon_48{
+    background-image: url(../assets/icons/warning.png);
+}
+
+
+.icon_16{
+    background-image: url(../assets/icons/cross.png);
+}
+
+
+.overlay-box{
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    backdrop-filter: saturate(180%) blur(5.0px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.alert-box{
+    padding: 20px;
+    background: #1d1e22;
+    border-radius: 10px;
+    box-shadow:0 4px 30px rgb(0 0 0 / 50%);
+    width: 300px;
+
+}
+
+.alert-content h1{
+    color: white;
+    margin: 5px 0;
+    font-size: 18px;
+}
+
+.alert-content p{
+    color: #9c9ca2;
+    font-size: 12px;
+}
+
+.headr{
+    height: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #161617;
+}
+
+.main-frame{
+    width: 100%;
+    height: calc(100vh - 70px);
+}
+
+.fav-wrap{
+    height: 70px;
+    padding: 20px;
+    display: flex;
+}
+
+.fav-wrap:hover{
+    background-color: #1d1e22;
+}
+
+.fav-wrap h1{
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+    margin-left: 15px;
+}
+
+.fav-cont, .git-cont{
+    height: 30px;
+    width: 30px;
+    background-size: contain;
+    background-image: url(../assets/icons/favicon.png);
+}
+
+.git-wr{
+    padding: 15px;
+}
+
+.git-cont{
+    height: 40px;
+    width: 40px;
+    background-image: url(../assets/icons/git.jpg);
+}
+
+.nav-wr{
+    padding: 25px;
+}
+
+.nav-wr nav a{
+    line-height: 20px;
+    color: white;
+    border-radius: 20px;
+    padding: 8px 10px;
+    text-decoration: none;
+}
+
+.li-active{
+    background-color: #fa2d48;
+}
