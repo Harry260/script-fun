@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <title>ScriptFun - Create a pop-up</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+        <meta name="description" content="Create script files in GUI and share it...">
+
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/responsive.css">
+        <link rel="icon"  type="image/png" href="assets/icons/parrot.png">
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    </head>
+    <body class="pop-body">
+
+        <div class="content-wrap">
+            <div class="contetn-inner">
+
+                <div class="title-large unselectable">
+                    <h1>Create pop-ups</h1>
+                </div>
+                <div class="inputs-popup unselectable" >
+
+                    <div class="icons-pop">
+                        <div class="icon-sel ic-active" data-icon="0">
+                            <div class="icon-cont"></div>
+                        </div>
+                        <div class="icon-sel" data-icon="32">
+                            <div class="icon-cont"></div>
+                        </div>
+                        <div class="icon-sel" data-icon="64">
+                            <div class="icon-cont"></div>
+                        </div>
+                        <div class="icon-sel" data-icon="48">
+                            <div class="icon-cont"></div>
+                        </div>
+                        <div class="icon-sel" data-icon="16">
+                            <div class="icon-cont"></div>
+                        </div>
+                    </div>
+
+                    <div class="input-box">
+                        <input type="text" placeholder="Popup title (optional)" id="pop-title">
+                    </div>
+                    <div class="input-box text-ar-wrap">
+                        <textarea type="text" placeholder="Lorem ipsum dolor sit amet...." id="pop-text"></textarea>
+                    </div>
+                </div>
+                
+                <button id="create-pop-up" title="Create pop file" class="button-blue unselectable">Create and Download</button>
+
+            </div>
+            <div class="list-messages unselectable">
+                <div class="title-small">
+                    <h1>Messages</h1>
+
+                    <div class="icon-wrap">
+                        <div id="add-pop-item" title="Add message" class="add-icon"></div>
+                    </div>
+
+                </div>
+                <div id="root-pop-list">
+                    <div class="pop-message-item">
+
+                        <div class="icon-item-wrap">
+                            <div class="icon-item"></div>
+                        </div>
+
+                        <div>
+                            <h2 class="message-item-title">Oh yeah</h2>
+                            <h5 class="message-item-text">Hey there! how's this app i made</h2>
+                        </div>
+
+                        <div class="pop-item">
+                            <h6>Move down</h6>
+                            <h6>Move up</h6>
+                            <h6>Delete</h6>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="overlay-box">
+            <div class="alert-box unselectable">
+                <div class="icon-cont alert-icon" >
+
+                </div>
+                <div class="alert-content">
+                    <h1 class="alert-title">Message</h1>
+                    <p class="alert-text" >Lorem ipsum dolor sit ameet constroctor de morid se garage</p>
+                </div>
+            </div>
+        </div>
+    </body>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/pop-up.js"></script>
+</html>
